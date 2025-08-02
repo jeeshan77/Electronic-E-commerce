@@ -5,6 +5,7 @@ import useDocTitle from '../hooks/useDocTitle';
 import cartContext from '../contexts/cart/cartContext';
 import CartItem from '../components/cart/CartItem';
 import EmptyView from '../components/common/EmptyView';
+import { useState } from "react";
 
 
 const Cart = () => {
@@ -37,6 +38,15 @@ const Cart = () => {
     const totalAmount = calculateCartTotal - calculateCartDiscount;
     const displayTotalAmount = displayMoney(totalAmount);
 
+    const [showModal, setShowModal] = useState(false);
+
+    const handleCheckoutClick = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
 
     return (
         <>
@@ -88,7 +98,65 @@ const Cart = () => {
                                                 <b>{displayTotalAmount}</b>
                                             </div>
                                         </div>
-                                        <button type="button" className="btn checkout_btn">Checkout</button>
+                                        {/* <button type="button" className="btn checkout_btn">Checkout</button> */}
+                                        <div style={{ position: "relative", zIndex: 1 }}>
+                                            <button
+                                                type="button"
+                                                className="btn checkout_btn"
+                                                onClick={handleCheckoutClick}
+                                            >
+                                                Checkout
+                                            </button>
+
+                                            {showModal && (
+                                                <div
+                                                    style={{
+                                                        position: "fixed",
+                                                        top: "0",
+                                                        left: "0",
+                                                        width: "100vw",
+                                                        height: "100vh",
+                                                        backgroundColor: "rgba(0, 0, 0, 0.4)",
+                                                        display: "flex",
+                                                        justifyContent: "center",
+                                                        alignItems: "center",
+                                                        zIndex: 1000,
+                                                    }}
+                                                >
+                                                    <div
+                                                        style={{
+                                                            backgroundColor: "#fff",
+                                                            padding: "20px 30px",
+                                                            borderRadius: "10px",
+                                                            maxWidth: "400px",
+                                                            width: "90%",
+                                                            boxShadow: "0 8px 20px rgba(0,0,0,0.3)",
+                                                            textAlign: "center",
+                                                            fontSize: "16px",
+                                                        }}
+                                                    >
+                                                        <p style={{ marginBottom: "20px", color: "#060200ff" }}>
+                                                            🚧 Checkout is currently unavailable.<br />Please try again later.
+                                                        </p>
+                                                        <button
+                                                            onClick={closeModal}
+                                                            style={{
+                                                                padding: "10px 20px",
+                                                                fontSize: "14px",
+                                                                fontWeight: "600",
+                                                                backgroundColor: "#ff5e32",
+                                                                color: "#fff",
+                                                                border: "none",
+                                                                borderRadius: "6px",
+                                                                cursor: "pointer",
+                                                            }}
+                                                        >
+                                                            Close
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

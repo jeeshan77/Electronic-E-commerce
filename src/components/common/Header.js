@@ -36,7 +36,7 @@ const Header = () => {
                 <div className="container">
                     <div className="navbar">
                         <h2 className="nav_logo">
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">HearWithJee</Link>
                         </h2>
                         <nav className="nav_actions">
                             <div className="search_action">

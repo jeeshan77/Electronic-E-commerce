@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="wrapper footer_wrapper">
                     <div className="foot_about">
                         <h2>
-                            <Link to="/">X-Beat</Link>
+                            <Link to="/">HearWithJee</Link>
                         </h2>
                         <div className="foot_subs">
                             <p>Subscribe to our Email alerts to receive early discount offers, and new products info.</p>
@@ -40,7 +40,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {
+                    {/* {
                         footMenu.map(item => {
                             const { id, title, menu } = item;
                             return (
@@ -61,7 +61,36 @@ const Footer = () => {
                                 </div>
                             );
                         })
+                    } */}
+                    {
+                        footMenu.map(item => {
+                            const { id, title, menu } = item;
+                            return (
+                                <div className="foot_menu" key={id}>
+                                    <h4>{title}</h4>
+                                    <ul>
+                                        {
+                                            menu.map(item => {
+                                                const { id, link, path } = item;
+                                                return (
+                                                    <li key={id}>
+                                                        <a
+                                                            href={path}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                        >
+                                                            {link}
+                                                        </a>
+                                                    </li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </div>
+                            );
+                        })
                     }
+
                 </div>
             </div>
 
@@ -72,11 +101,11 @@ const Footer = () => {
                     <div className="sub_footer_wrapper">
                         <div className="foot_copyright">
                             <p>
-                                {currYear} | XBeat. All Rights Reserved.
-                                Built by | <a href="https://gulshansongara.netlify.app/">Gulshan Songara</a>
+                                {currYear} | HearWithJee. All Rights Reserved.
+                                Built by | <a href="https://www.linkedin.com/in/jeeshan-gosain/">Jeeshan</a>
                             </p>
                         </div>
-                        <div className="foot_social">
+                        {/* <div className="foot_social">
                             {
                                 footSocial.map((item) => {
                                     const { id, icon, path } = item;
@@ -85,6 +114,19 @@ const Footer = () => {
                                     );
                                 })
                             }
+                        </div> */}
+                        <div className="foot_social">
+                            {footSocial.map(({ id, icon, path }) => (
+                                <a
+                                    href={path}
+                                    key={id}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="social-icon"
+                                >
+                                    {icon}
+                                </a>
+                            ))}
                         </div>
                     </div>
                 </div>
