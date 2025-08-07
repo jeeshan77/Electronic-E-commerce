@@ -7,7 +7,7 @@ import Services from '../components/common/Services';
 
 
 const Home = () => {
-
+// process
     return (
         <main>
             <section id="hero">

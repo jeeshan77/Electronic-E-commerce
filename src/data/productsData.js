@@ -9,7 +9,7 @@ const productsData = [
             "/images/products/jbl660nc-2.png",
             "/images/products/jbl660nc-3.png",
             "/images/products/jbl660nc-4.png",
-        ],
+        ],// process
         brand: "JBL",
         title: "JBL Live 660NC",
         info: "Wireless Over-Ear NC Headphones",

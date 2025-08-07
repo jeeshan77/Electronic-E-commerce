@@ -18,7 +18,7 @@
         justify-items: unset;
         gap: 4rem;
     }
-
+// process
     @include devices(xs) {
         grid-template-columns: 1fr;
         gap: 3rem;

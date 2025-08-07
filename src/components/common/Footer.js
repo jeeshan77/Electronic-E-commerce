@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { footMenu, footSocial } from '../../data/footerData';
 
-
+// process
 const Footer = () => {
 
     const [subValue, setSubValue] = useState('');

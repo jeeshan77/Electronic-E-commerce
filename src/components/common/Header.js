@@ -7,7 +7,7 @@ import cartContext from '../../contexts/cart/cartContext';
 import AccountForm from '../form/AccountForm';
 import SearchBar from './SearchBar';
 
-
+// process
 const Header = () => {
 
     const { formUserInfo, toggleForm, toggleSearch } = useContext(commonContext);

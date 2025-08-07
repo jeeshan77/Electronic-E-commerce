@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useScrollDisable from '../../hooks/useScrollDisable';
 
-
+// process
 const Preloader = () => {
     const [isLoading, setIsLoading] = useState(true);
 

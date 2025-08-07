@@ -9,5 +9,5 @@ const SectionsHead = (props) => {
         </>
     );
 };
-
+// process
 export default SectionsHead;

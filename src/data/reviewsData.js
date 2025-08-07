@@ -12,7 +12,7 @@ const reviewsData = [
         date: "15 July 2022",
         review: "Very good and awesome product",
         rateCount: 5,
-    },
+    },// process
     {
         id: 3,
         name: "Bhavesh Joshi",

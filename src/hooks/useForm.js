@@ -16,7 +16,7 @@ const useForm = () => {
             };
         });
     };
-
+// process
     // handling form-submission
     const handleFormSubmit = (e) => {
         const loggedUserInfo = inputValues.mail.split('@')[0].toUpperCase();

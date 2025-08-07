@@ -11,7 +11,7 @@
         background-color: var(--black-color);
     }
 }
-
+// process
 .navbar {
     @include flexbox(space-between, center);
 }

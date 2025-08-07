@@ -7,7 +7,7 @@ import Services from '../components/common/Services';
 import filtersContext from '../contexts/filters/filtersContext';
 import EmptyView from '../components/common/EmptyView';
 
-
+// process
 const AllProducts = () => {
 
     useDocTitle('All Products');

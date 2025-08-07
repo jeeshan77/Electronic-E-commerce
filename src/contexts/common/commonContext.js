@@ -11,7 +11,7 @@ const initialState = {
     isSearchOpen: false,
     searchResults: []
 };
-
+// Process
 // Common-Provider Component
 const CommonProvider = ({ children }) => {
 

@@ -16,7 +16,7 @@ const filtersReducer = (state, action) => {
                 }
             };
 
-
+// process
         case 'SET_SORTED_VALUE':
             return {
                 ...state,

@@ -5,7 +5,7 @@ import { displayMoney } from '../../helpers/utils';
 import cartContext from '../../contexts/cart/cartContext';
 import QuantityBox from '../common/QuantityBox';
 
-
+// process
 const CartItem = (props) => {
 
     const { id, images, title, info, finalPrice, originalPrice, quantity, path } = props;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { IoMdStar } from 'react-icons/io';
-
+// process
 const ProductReviews = (props) => {
 
     const { name, date, review, rateCount } = props;

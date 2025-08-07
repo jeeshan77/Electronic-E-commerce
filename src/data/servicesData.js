@@ -13,7 +13,7 @@ const servicesData = [
         title: "Brand Warranty",
         info: "100% Original products",
     },
-    {
+    {// process
         id: 3,
         icon: <FaTags />,
         title: "Exciting Deals",

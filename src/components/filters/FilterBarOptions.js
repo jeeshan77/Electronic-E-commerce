@@ -3,7 +3,7 @@ import filtersContext from '../../contexts/filters/filtersContext';
 import { sortMenu } from '../../data/filterBarData';
 import { displayMoney } from '../../helpers/utils';
 
-
+// process
 const FilterBarOptions = () => {
 
     const {

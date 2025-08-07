@@ -14,7 +14,7 @@ const commonReducer = (state, action) => {
                 formUserInfo: action.payload.info
             };
 
-
+// Process
         case 'TOGGLE_SEARCH':
             return {
                 ...state,

@@ -16,7 +16,7 @@ export const calculateDiscount = (discountedPrice, originalPrice) => {
 
     return Math.round(discountedPercent);
 };
-
+// process
 
 // Calculate Total Amount
 export const calculateTotal = (arr) => {

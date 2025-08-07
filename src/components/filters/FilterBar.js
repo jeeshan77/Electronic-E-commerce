@@ -3,7 +3,7 @@ import { BiSort, BiFilterAlt } from 'react-icons/bi';
 import filtersContext from '../../contexts/filters/filtersContext';
 import FilterBarOptions from './FilterBarOptions';
 
-
+// process
 const FilterBar = () => {
 
     const { handleMobSortVisibility, handleMobFilterVisibility } = useContext(filtersContext);

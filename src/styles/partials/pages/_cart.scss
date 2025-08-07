@@ -16,7 +16,7 @@
             transform: scale(0.6);
         }
     }
-
+// process
     @include devices(lg) {
         grid-template-columns: 1fr;
     }

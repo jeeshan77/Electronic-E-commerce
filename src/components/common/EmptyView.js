@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const EmptyView = (props) => {
 
     const { icon, msg, link, btnText } = props;
-
+// process
     return (
         <>
             <div className="empty_view_wrapper">

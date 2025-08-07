@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import cartContext from '../../contexts/cart/cartContext';
 
-
+// process
 const QuantityBox = (props) => {
 
     const { itemId, itemQuantity } = props;

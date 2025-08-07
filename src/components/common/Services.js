@@ -2,7 +2,7 @@ import React from 'react';
 import servicesData from '../../data/servicesData';
 import SectionsHead from './SectionsHead';
 
-
+// process
 const Services = () => {
   return (
     <>

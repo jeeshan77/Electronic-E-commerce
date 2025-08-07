@@ -6,7 +6,7 @@ import useOutsideClose from '../../hooks/useOutsideClose';
 import useScrollDisable from '../../hooks/useScrollDisable';
 // import { AiOutlineSearch } from 'react-icons/ai';
 
-
+// process
 const SearchBar = () => {
 
     const { isSearchOpen, toggleSearch, searchResults, setSearchResults } = useContext(commonContext);

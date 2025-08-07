@@ -6,7 +6,7 @@ import filtersReducer from './filtersReducer';
 // Filters-Context
 const filtersContext = createContext();
 
-
+// process
 // Initial State
 const initialState = {
     allProducts: [],

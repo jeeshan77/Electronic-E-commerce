@@ -6,7 +6,7 @@ import ProductCard from '../product/ProductCard';
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
-
+// process
 
 const RelatedSlider = (props) => {
 

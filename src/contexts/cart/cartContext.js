@@ -8,7 +8,7 @@ const cartContext = createContext();
 const initialState = {
     cartItems: []
 };
-
+// Process
 // Cart-Provider Component
 const CartProvider = ({ children }) => {
 

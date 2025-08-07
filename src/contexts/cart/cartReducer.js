@@ -20,7 +20,7 @@ const cartReducer = (state, action) => {
             } else {
                 updatedCartItems = [...state.cartItems, action.payload.item];
             }
-
+// Process
             return {
                 ...state,
                 cartItems: updatedCartItems
